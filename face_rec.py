@@ -37,11 +37,12 @@ for image_path in image_paths:
 		nbr_predicted, conf = recognizer.predict(predict_image[y: y + h, x: x + w])
 		nbr_actual = int(os.path.split(image_path)[1].split(".")[0].replace("subject", ""))
 		if nbr_actual == nbr_predicted:
-			print "{} is Correctly Recognized with confidence {}".format(nbr_actual, conf)
+			print "Individual {} matched with {}. Correctly Recognized with confidence {}".format(nbr_actual, nbr_predicted, conf)
 		else:
 			print "{} is Incorrectly Recognized as {}".format(nbr_actual, nbr_predicted)
 		cv2.imshow("Recognizing Face", predict_image[y: y + h, x: x + w])
 		cv2.waitKey(1000)
+cv2.destroyAllWindows()
 
 #importing from FACEBOOK API:
 # import json
