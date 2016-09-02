@@ -3,3 +3,5 @@ This is a project exploring the boundaries of privacy, personal information, and
 We seek to define the minimum amount of features in a face which, in combination with public social media profile information (name & location), represent the entire identity of a person.
 
 This project is in active development. 
+
+![badge-img](https://img.shields.io/badge/Made%20at-%23AstroHackWeek-8063d5.svg?style=flat)
